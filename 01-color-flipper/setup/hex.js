@@ -3,8 +3,13 @@ const hash = "#";
 function randomColor() {
     //turning array to string
     let newHex = hex.toString();
+    for (i = 0; i<6; i++) {
+       hash += newHex[Math.floor(Math.random() * newHex.length)];
+    }
+    return newHex;
+} ;
 
-} 
+console.log(randomColor());
 
 //1. click button to change color randomly
 // - code to have random color changes
