@@ -1,11 +1,12 @@
-let decreaseBtn = document.querySelector("decrease");
-let resetBtn = document.querySelector("reset");
-let increaseBtn = document.querySelector("increase");
+let decreaseBtn = document.querySelector(".decrease");
+let resetBtn = document.querySelector(".reset");
+let increaseBtn = document.querySelector(".increase");
 //initialize the counter value
-let currentValue = document.getElementById("value");
+let current = document.querySelector(".value");
+//let currentValue = current.textContent;
 
 decreaseBtn.addEventListener("click", function() {
-    decreasedValue = currentValue--;
+    decreasedValue = current--;
     console.log(decreasedValue);
 })
 
