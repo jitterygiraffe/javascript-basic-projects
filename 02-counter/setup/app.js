@@ -1,14 +1,34 @@
 let decreaseBtn = document.querySelector(".decrease");
 let resetBtn = document.querySelector(".reset");
 let increaseBtn = document.querySelector(".increase");
-//initialize the counter value
-let current = document.querySelector(".value");
-//let currentValue = current.textContent;
 
+// Initialize the counter value
+let current = document.querySelector("#value");
+// Extract and ensure it's a number
+let currentValue = parseInt(current.textContent);
+
+// Decrease button functionality
 decreaseBtn.addEventListener("click", function() {
-    decreasedValue = current--;
-    console.log(decreasedValue);
-})
+    currentValue--; // Decrease the value
+    current.textContent = currentValue; // Update displayed value
+    console.log("Decreased Value:", currentValue);
+});
+
+
+// let decreaseBtn = document.querySelector(".decrease");
+// let resetBtn = document.querySelector(".reset");
+// let increaseBtn = document.querySelector(".increase");
+// //initialize the counter value
+// let current = document.querySelector(".value");
+
+
+// decreaseBtn.addEventListener("click", function() {
+//     //extract the current value
+//     let currentValue = parseInt(current.textContent);
+//     decreasedValue = currentValue--;
+    
+//     console.log(decreasedValue);
+// })
 
 // function decreaseCounter(){
 //     decreaseBtn.addEventListener("click", ()=> {
