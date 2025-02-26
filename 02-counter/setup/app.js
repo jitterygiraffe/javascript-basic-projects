@@ -21,3 +21,10 @@ resetBtn.addEventListener("click", function() {
     current.textContent = currentValue; // Update displayed value
     console.log("Reset Value:", currentValue);
 });
+
+//Increase button functionality
+increaseBtn.addEventListener("click", function() {
+    currentValue++; // Decrease the value
+    current.textContent = currentValue; // Update displayed value
+    console.log("Reset Value:", currentValue);
+});
