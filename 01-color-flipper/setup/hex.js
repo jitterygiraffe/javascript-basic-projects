@@ -1,5 +1,9 @@
 document.getElementById("btn").addEventListener("click", ()=> {
     document.body.style.backgroundColor = randomColor();
+    let colorDisplay = document.getElementsByTagName("span");
+    if (colorDisplay.length > 0) {
+        colorDisplay[0].textContent = randomColor();
+    }
 });
 
 
@@ -13,10 +17,3 @@ function randomColor() {
     }
      return hash;
 } ;
-
-//console.log(randomColor());
-
-//1. click button to change color randomly
-// - code to have random color changes
-//             -
-// -code for button to listen to being clicked
