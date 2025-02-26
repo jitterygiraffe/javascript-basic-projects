@@ -14,3 +14,10 @@ decreaseBtn.addEventListener("click", function() {
     console.log("Decreased Value:", currentValue);
 });
 
+
+//Reset button functionality
+resetBtn.addEventListener("click", function() {
+    currentValue = 0; // Decrease the value
+    current.textContent = currentValue; // Update displayed value
+    console.log("Reset Value:", currentValue);
+});
